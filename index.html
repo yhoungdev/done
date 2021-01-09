@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nin form </title>
+</head>
+<body>
+    <div class="general">
+        <div class="container">
+        <div class="top">
+            <span>
+                <img src="" alt="image">
+            </span>
+            <span><h3>NATIONAL IDENTIFICATION NUMBER (NIN) ENROLMENT FORM</h3></span>
+            <small class="text-muted text-center">PLEASE FILL IN THE FORM IN BLOCK LETTERS AND TICK AS APPROPRAITE</small>
+
+            <!--first -->
+
+            <form class="form">
+               <div class="first">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="first name">FIRST NAME</label>
+                        <input type="text" id="first" class="form-control" name="firstname">
+                    </div>
+
+                    <div class="col-6">
+                        <label for="last name">LAST NAME</label>
+                        <input type="text" id="last" class="form-control" name="lastname">
+                    </div>
+                </div>
+
+                <small class="text-muted">  .</small>
+                <!--second row -->
+                <div class="row">
+                    <div class="col-6">
+                        <label for="last name">OTHER NAME</label>
+                        <input type="text" id="last" class="form-control" name="othername">
+                    </div>
+
+                    <div class="col-6">
+                        <label for="place">MIDDLE NAME</label>
+                        <input type="text" class="form-control" name="middlename">
+                    </div>
+                </div>
+
+                <small class="text-muted">HAVE YOU CHANGED YOUR NAME BEFORE  ?</small>
+                <div class="row mt-3">
+                    
+                    <div class="col-6 ">
+                       <div>
+                        <label for="town"> PREVIOUS SURNAME</label>
+                        <input type="text" id="town" class="form-control" name="previous_surname">
+                       </div>
+
+                       <div class="mt-3">
+                           <label for="state">PREVIOUS FIRST NAME</label>
+                           <input type="text" id="state" class="form-control" name="previous_firstname">
+                       </div>
+
+                    </div>
+
+                    <div class="col-6 ">
+                        <div>
+                            <label for="country">COUNTRY OF RESIDENCE</label>
+                            <input type="text" id="cont" class="form-control" name="country" >
+                        </div>
+
+                        <div class="mt-3">
+                            <label for="country">PREVIOUS MIDDLE NAME</label>
+                            <input type="text" id="lg" class="form-control">
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+             
+                <!--hide button-->
+
+                <button class="btn btn-primary first-btn mt-3">Next</button>
+               </div>
+
+               <div class="second" style="display: none;" >
+                    <!--the second part -->
+
+                    <div class="mt-3">
+                        
+                        <small class="text-muted">ARE YOU HOME LESS ?  </small>
+                        <!--new row -->
+                        <div class="row">
+
+                            <div class="col-6">
+                                <div>
+                                    <label for="town">TOWN / CITY OF RESIDENCE </label>
+                                    <input type="text" id="town" class="form-control" name="town_or_city">
+                                 </div>
+
+
+                                 <div>
+                                    <label for="state ">COUNTRY OF RESIDENCE </label>
+                                    <input type="text" id="town" class="form-control" name="country">
+                                </div>
+                                
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <label for="state ">STATE OF RESIDENCE </label>
+                                    <input type="text" id="town" class="form-control" name="state_of_residence">
+                                </div>
+
+                                <div>
+                                    <label for="state ">LG  OF RESIDENCE </label>
+                                    <input type="text" id="town" class="form-control" name="lga">
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div>
+                                    <label for="state ">ADDRESS OF RESIDENCE </label>
+                                    <input type="text" id="town" class="form-control" name="address_of_residence">
+                                </div>
+                                
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <label for="state ">ZIP CODE </label>
+                                    <input type="text" id="town" class="form-control" name="postal_code">
+                                </div>
+                            </div>
+                        </div>
+
+                       
+
+                        <button class="btn btn-primary mt-3 sec-btn">NEXT</button>
+                    </div>
+
+                 
+
+               </div>
+
+               <!--third phase -->
+               <div class="third" style="display: none;">
+
+                        <small class="text-muted">WHEN AND WHERE WHERE YOU BORN </small>
+                        <div class="row">
+                            <div class="col-6">
+                                <div>
+                                    <label for="date">DATE OF BIRTH</label>
+                                    <input type="date" class="form-control" name="date_of_birth">
+                                </div>
+
+                                <div>
+                                    <label for="place">PLACE OF BIRTH-CONTRY</label>
+                                     <input type="text" class="form-control" name="place_of_birth_country">
+                                </div>
+                                
+                            </div>
+                                
+
+                            <div class="col-6">
+                                <div>
+                                    <label for="place">PLACE OF BIRTH-STATE</label>
+                                    <input type="text" class="form-control" name="place_of_birth_state">
+                                </div>
+
+                                <div>
+                                    <label for="place">PLACE OF BIRTH-LG</label>
+                                     <input type="text" class="form-control" name="place_of_birth_lga">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary third-btn">NEXT</button>
+
+
+               </div>
+
+               <!--forth -->
+               <div class="forth" style="display: none;">
+                   <small class="text-muted">WHERE ARE YOU FROM</small>
+                   <div class="row">
+
+                        <div class="col-6">
+                            <div>
+                                <label for="place_contry"> PLACE OF COUNTRY</label>
+                                <input type="text" class="form-control" name="place_of_origin_country">
+
+                            </div>
+                            <div>
+                                <label for="place_contry"> PLACE OF STATE</label>
+                                <input type="text" class="form-control" name="place_of_origin_state">
+
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div>
+                                <label for="place_contry"> PLACE OF ORIGIN TOWN</label>
+                                <input type="text" class="form-control" name="place_of_origin_town">
+
+                            </div>
+                            <div>
+                                <label for="place_contry"> PLACE OF LGA</label>
+                                <input type="text" class="form-control" name="place_of_origin_lga">
+
+                            </div>
+
+                        </div>
+
+                   </div>
+                   <button class="btn btn-primary mt-3 frth-btn">NEXT</button>
+               </div>
+
+               <div class="fifth"  style="display: none;">
+                   <small class="text-muted">WHERE IS YOUR FATHER FROM ?</small>
+                   <div class="row">
+
+                    <div class="col-6">
+                        <div>
+                            <label for="place_contry"> PLACE OF COUNTRY</label>
+                            <input type="text" class="form-control" name="father_place_of_origin_country">
+
+                        </div>
+                        <div>
+                            <label for="place_contry"> PLACE OF STATE</label>
+                            <input type="text" class="form-control" name="father_place_of_origin_state">
+
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div>
+                            <label for="place_contry"> PLACE OF TOWN</label>
+                            <input type="text" class="form-control" name="father_place_of_origin_town">
+
+                        </div>
+                        <div>
+                            <label for="place_contry"> PLACE OF LGA</label>
+                            <input type="text" class="form-control" name="father_place_of_origin_lga">
+
+                        </div>
+
+                    </div>
+
+               </div>
+                    <small class="text-muted mt-2"> WHERE IS YOUR MOTHER FROM ? </small>
+               <div class="row">
+
+                <div class="col-6">
+                    <div>
+                        <label for="place_contry"> PLACE OF COUNTRY</label>
+                        <input type="text" class="form-control" name="mother_place_of_origin_country">
+
+                    </div>
+                    <div>
+                        <label for="place_contry"> PLACE OF STATE</label>
+                        <input type="text" class="form-control" name="mother_place_of_origin_state">
+
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div>
+                        <label for="place_contry"> PLACE OF TOWN</label>
+                        <input type="text" class="form-control" name="mother_place_of_origin_town">
+
+                    </div>
+                    <div>
+                        <label for="place_contry"> PLACE OF LGA</label>
+                        <input type="text" class="form-control" name="mother_place_of_origin_lga">
+
+                    </div>
+
+                </div>
+
+           </div>
+                <button class="btn btn-primary five mt-3">NEXT</button>
+               </div>
+               <!--sixth part-->
+              <div class="sixth" style="display: none;">
+                <small class="YOUR PHYSICAL FEATURES"></small>
+                <div class="row">
+                    <div class="col-6">
+                        <div>
+                            <label for="gender">GENDER</label>
+                            <small>male</small>
+                            <input type="radio" name="gender">
+                            <small>female</small>
+                         <input type="radio" name="gender">
+                        </div>
+
+                        <div>
+                            <label for="hight">HEIGHT</label>
+                            <input type="text" class="form-control" name="height_centimeter">
+                        </div>
+
+                        <!--status-->
+                        <div>
+                            <label for="status">RESIDENCE STATUS</label>
+                            <small>BIRTH </small>
+                            <input type="checkbox" name="residential_status" id="">
+                            <small>NATURALIZATION</small>
+                            <input type="checkbox" name="residential_status" id="">
+
+                        </div>
+                        <div>
+                            <label for="nation">NATIONALITY</label>
+                            <input type="text" class="form-control" name="nationality">
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="col-6">
+                       <div>
+                            <label for="mark"> TRIBAL MARKS</label>
+                            <input type="checkbox" name="tribal_marks" id="">
+                            <label for="hunch" >HUNCH BACK</label>
+                            <input type="checkbox" name="spec" id="" name="hunch_back">
+                            <label for="scars">VISIBLE SCAR</label>
+                            <input type="checkbox" name="visible_scars" id="">
+                       </div>
+                       <div>
+                        <label for="other">OTHERS</label>
+                        <input type="text" class="form-control" class="others">
+                       </div>
+                       <div class="mt-4">
+                           <label for="register">REGISTERATION</label>
+                           <input type="text" class="form-control">
+                       </div>
+                    </div>
+
+
+                </div>
+
+                <button class="btn btn-primary fit-btn mt-3">NEXT</button>
+
+
+              </div>
+
+              <!--physical challange -->
+              <div class="challange" style="display: none;">
+                <small class="text-muted">ANY PHYSICAL CHALLANGE ?</small>
+
+                <div class="row">
+                    <div class="col-6">
+                            <div>
+                                <small>BLIND</small>
+                                <input type="checkbox" name="blind">
+                                <small>DEAF</small>
+                                <input type="checkbox" name="deaf">
+                                <small>DUMB</small>
+                                <input type="checkbox" name="dumb">
+                                <small>PARALYSED</small>
+                                <input type="checkbox" name="paralyzed">
+                            </div>
+
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <small>OTHERS</small>
+                            <input type="text" class="form-control" name="other_challenges">
+                        </div>
+                    </div>
+                </div>
+
+                <!--bank-->
+                <small class="text-muted">ABOUT THE CARD</small>
+                <div class="row">
+                  
+                    <div class="col-6">
+                        <div>
+                            <label for="bank">CARD TYPE</label>
+                             <input type="text" class="form-control" name="card_type">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <label for="issue">ISSUEING BANK</label>
+                             <input type="text" class="form-control" name="issuing_bank">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary mt-3 issue">NEXT</button>
+              </div>
+
+              <!--supporting document-->
+              <div class="support" style="display: none;">
+                  <small class="text-muted">SUPPORTING DOCUMENTS</small>
+
+                  <!--selects-->
+                 <div class="row">
+                    <div class="col-6">
+                        <div>
+                            <select name="document_type" id="">
+                                <option value="immigeration">IMMAGERATION DOCUMENT</option>
+                                <option value="immigeration">NATIONAL  INSURANCE</option>
+                                <option value="immigeration">NIGERIA DRIVER LICENSE</option>
+                                <option value="immigeration">NIGERIA PASSPORT</option>
+                                <option value="immigeration">OTHER DESIGNATED DOCUMENT</option>
+                                <option value="immigeration">OTHER NATIONAL CARD</option>
+                                <option value="immigeration">OTHER  PASSPORT</option>
+                                <option value="immigeration">OTHER DOCUMENT</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="number">DOCUMENT NUMBER</label>
+                            <input type="text" class="form-control" name="document_number">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mt-4">
+                            <label for="expire">EXPIRY DATE</label>
+                            <input type="text" class="form-control" name="document_expiry_date">
+                        </div>
+                    </div>
+
+                        <button class="btn btn-primary mt-3 doc">NEXT</button>
+
+                 </div>
+
+
+
+              </div>
+
+              <!--other details-->
+              <div class="personal" style="display: none;">
+                  <div class="row">
+                      <div class="col-6">
+                            <div>
+                                <label for="marital">MARITAL STATUS</label>
+                                <br>
+                              <select name="marital_status" id="">
+                                  <option value="divorced">DIVORCED</option>
+                                  <option value="married">MARRIED</option>
+                                  <option value="separated"> SEPARATED</option>
+                                  <option value="signle">SINGLE</option>
+                                  <option value="widowed">WIDOWED</option>
+                              </select>
+                            </div>
+
+                            <div>
+                                <label for="read">LANGUAGE YOU READ AND WRITE</label>
+                                <input type="text" class="form-control" name="language_read_and_write">
+                            </div>
+
+                            <div>
+                                <label for="spoken"> OTHER SPOKEN LANGUAGE</label>
+                                <input type="text" class="form-control" name="other_language_spoken">
+                            </div>
+
+                            <div>
+                                <label for="spoken"> EMAIL</label>
+                                <input type="text" class="form-control" name="email_address">
+                            </div>
+
+                            <div>
+                                <label for="education">EDUCATIONAL LEVEL</label>
+                                 <select name="education_level" id="">
+                                     <option value="certification">CERTIFICATION</option>
+                                     <option value="post_graduant">POST-GRADUATE</option>
+                                     <option value="primary">PRIMARY</option>
+                                     <option value="secondary">SECONDARY</option>
+                                     <option value="tertiary">TERTIARY</option>
+                                     <option value="none">NONE</option>
+                                 </select>
+                            </div>
+
+                            <div>
+                                <!--delivery-->
+                                <label for="delivery"> HOME DELIVERY OF THE CARD <i>(cuouriwe fee will be applied )</i> </label>
+                                <input type="radio" name="home_delivery_of_card" id="">yes 
+                                <input type="radio" name="home_delivery_of_card" id="">no
+                            </div>
+                     
+                      </div>
+                      <div class="col-6">
+                          <div>
+                              <label for="religion">RELIGION</label>
+                              <br>
+                            <select name="religion" id="">
+                                <option value="Christian">CHRISTIAN</option>
+                                <option value="Islam">ISLAM</option>
+                                <option value="traditional">TRADITIONAL</option>
+                            </select>
+                          </div>
+
+                          <div>
+                              <label for="language">MAIN NATIVE LANGUAGE SPOKEN</label>
+                              <input type="text" class="form-control" class="main_native_language_spoken">
+                          </div>
+
+                          <div>
+                            <label for="spoken"> OCCUPATION/PROFESSION</label>
+                            <input type="text" class="form-control" name="occupation">
+                        </div>
+
+                        <div>
+                            <label for="spoken"> TELEPHONE </label>
+                            <input type="text" class="form-control" name="telephone">
+                        </div>
+
+                        <div>
+                            <label for="employ">EMPLOYMENT STATUS</label>
+
+                            <select name="employment_status" id="">
+                                <option value="employed">EMPLOYED</option>
+                                <option value="unemployed">UNEMPLOYED</option>
+                                <option value="pensioner">PENSIONER</option>
+                                <option value="self_employed"> SELF EMPLOYED</option>
+                            </select>
+                        </div>
+                      </div>
+                  </div>
+                  <button class="btn btn-primary pe-btn">NEXT</button>
+              </div>
+
+
+              <!--other details about ur family-->
+              <div class="parentD" style="display: none;">
+                <div class="row">
+                    <div class="col-6">
+                        <div>
+                            <label for="place">FATHER'S SURNAME</label>
+                            <input type="text" class="form-control" name="father_surname">
+                        </div>
+
+                        <div>
+                            <label for="place">FATHER'S MIDDLE NAME </label>
+                            <input type="text" class="form-control" name="father_middlename">
+                        </div>
+
+                        <div>
+                            <label for="place">MOTHERS FIRST NAME </label>
+                            <input type="text" class="form-control" name="father_firstname">
+                        </div>
+
+                        <div>
+                            <label for="place">MOTHERS NIN</label>
+                            <input type="text" class="form-control" name="mother_nin">
+                        </div>
+
+                        <div>
+                            <small>MOTHERS MAIDEN NAME</small>
+                            <input type="text" class="form-control">
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <label for="place">FATHER'S FIRST SURNAME</label>
+                            <input type="text" class="form-control" name="father_firstname">
+                        </div>
+
+                        <div>
+                            <small>FATHER'S NIN <i>(if available)</i></small>
+                            <input type="text" class="form-control" name="father_nin">
+                        </div>
+
+                        <div>
+                            <label for="place">MOTHERS SURNAME</label>
+                            <input type="text" class="form-control" class="mother_surname">
+                        </div>
+
+                        <div>
+                            <label for="place">MOTHERS MIDDLE NAME</label>
+                            <input type="text" class="form-control" name="mother_middlename">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <button class="btn btn-primary father-btn mt-3"> NEXT</button>
+              </div>
+
+              <!--gusridans detail -->
+              <div class="guard" style="display: none;">
+                  <small class="text-muted">GUARDIAN DETAILS</small>
+                <div class="row">
+                    <div class="col-6">
+                       <div>
+                        <label for="surnae">GUARDIAN SURNAME</label>
+                        <input type="text" class="form-control" name="guardian_surname">
+                       </div>
+
+                       <div>
+                        <label for="name">GUARDIAN MIDDLE NAME</label>
+                        <input type="text" class="form-control" name="guardian_middlename">
+                       </div>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <label for="gaurd_name"> FIRST NAME</label>
+                            <input type="text" class="form-control" name="guardian_firstname">
+                        </div>
+
+                        <div>
+                            <label for="gaurd_nin">NATIONAL IDENTIFICATION NUMBER </label>
+                            <input type="text" class="form-control" class="guardian_nin">
+                         </div>
+                    </div>
+                   
+                </div>
+                <button class="btn btn-primary detail mt-3">NEXT</button>
+
+              </div>
+
+              <!--next of kin-->
+              <div class="kin" style="display: none;">
+                <small class="text-muted">YOUR NEXT OF KIN DETAILS</small>
+              <div class="row">
+                  <div class="col-6">
+                     <div>
+                      <label for="surnae">SURNAME OF NEXT OF KIN</label>
+                      <input type="text" class="form-control" name="kin_surname">
+                     </div>
+
+                     <div>
+                      <label for="name">MIDDLE NAME OF NEXT OF KIN</label>
+                      <input type="text" class="form-control" name="kin_middlename">
+                     </div>
+                  </div>
+                  <div class="col-6">
+                      <div>
+                          <label for="gaurd_name"> FIRST NAME OF NEXT OF KIN</label>
+                          <input type="text" class="form-control" name="kin_firstname">
+                      </div>
+
+                      <div>
+                          <label for="surnae">RELATIONSHIP WITH NEXT OF KIN </label>
+                          <input type="text" class="form-control" name="relationship_with_kin">
+                       </div>
+                  </div>
+                 
+              </div>
+              <button class="btn btn-primary detail1 mt-3">NEXT</button>
+
+            </div>
+
+            <!--address o9f next of kin-->
+            <div class="adr" style="display: none;">
+                <small class="text-muted">ADDRESS OF NEXT OF KIN</small>
+              <div class="row">
+                  <div class="col-6">
+                     <div>
+                      <label for="surnae">COUNTRY OF RESIDENCE</label>
+                      <input type="text" class="form-control" name="kin_country_residence">
+                     </div>
+
+                     <div>
+                      <label for="name">STATE OF RESIDENCE</label>
+                      <input type="text" class="form-control" name="kin_state_residence">
+                     </div>
+                     <div>
+                        <label for="surnae">STREET ADDRESS</label>
+                        <input type="text" class="form-control" name="kin_address">
+                     </div>
+
+                     <div>
+                         <small>KIN POSTAL CODE </small>
+                         <input type="text" class="form-control" name="kin_postal_code">
+                     </div>
+                  </div>
+                  <div class="col-6">
+                      <div>
+                          <label for="gaurd_name"> LOCAL GOVERNMENT AREA OF RESIDENCE</label>
+                          <input type="text" class="form-control" name="kin_lga">
+                      </div>
+
+                      <div>
+                          <label for="surnae">TOWN/CITY NUMBER OF RESIDENCE</label>
+                          <input type="text" class="form-control" name="kin_town">
+                       </div>
+
+                       <div>
+                        <label for="surnae">NEXT OF KIN NIN </label>
+                        <input type="text" class="form-control" name="kin_nin">
+                     </div>
+                  </div>
+                 
+              </div>
+              <input type="submit" value="SUBMIT" class="btn btn-primary  mt-3">
+
+            </div>
+
+            </form>
+        </div>
+    </div>
+   
+        
+    </div>
+
+    <script src="./script/jquery.js"></script>
+    <script src="./script/main.js"></script>
+</body>
+</html>

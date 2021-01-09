@@ -1,0 +1,42 @@
+:root {
+    --color:#808080 ;
+    --bf:rgb(231, 63, 63);
+}
+body {
+    overflow: hidden;
+}
+.general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+label {
+    font-size: 12px;
+}
+
+label::after {
+    content: "*";
+    color: var(--bf);
+}
+input[type=text]{
+    outline: none;
+    caret-color: grey;
+    height: 50px;
+}
+
+@media screen and (min-width:600px){
+    #first {
+        /* margin-left: 1em;
+    }
+    #town {
+        margin-left: 4em;
+    }
+    #lg {
+        margin-left: 2.6em;
+    }
+    #last{
+        margin-left: 2em;
+    } */
+}
